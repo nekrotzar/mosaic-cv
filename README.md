@@ -1,6 +1,6 @@
 # mosaic-cv
 
-This script generates photo mosaics using Python3 and the library OpenCV to handle images.
+This script generates photo mosaics with **Python3** using the **OpenCV** library to handle images.
 The script requires a target image and different images to be processed as the block units in the mosaic.
 
 
@@ -12,7 +12,7 @@ python mosaic.py <target> <images> <block_size>
 ```
 
 * `target`: the target image directory.
-* `images`: the image directory to be used. A recursive search is used to find all the suported files.
+* `images`: the image directory to be used. A recursive search is used to find all the supported files.
 To add other image formats, edit the code to add the format prefix to the global variable [IMAGE_FILE_FORMATS](https://github.com/nekrotzar/mosaic-cv/blob/master/mosaic.py#L9).
 * `block_size`: the size of a mosaic square block (in pixels).
 
