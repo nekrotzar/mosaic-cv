@@ -7,7 +7,9 @@ The script requires a target image and different images to be processed as the b
 ## Usage
 
 Run the following command:
-> python mosaic.py <target> <images> <block_size>
+```sh
+python mosaic.py <target> <images> <block_size>
+```
 
 * `target`: the target image directory.
 * `images`: the image directory to be used. A recursive search is used to find all the suported files.
@@ -16,8 +18,12 @@ To add other image formats, edit the code to add the format prefix to the global
 
 ## Example
 Using a custom dataset of images placed in /data/images:
-> python mosaic.py data/cat.jpg data/images 20
+```sh
+python mosaic.py data/cat.jpg data/images 20
+```
 
-Original(data/cat.jpg)             |  Mosaic(data/out/mosaic-20-2320x3480)
+![Mosaic](data/cat.jpg "original")  |  ![Oricinal](data/out/mosaic-20-2320x3480.png "mosaic")
 :-------------------------:|:-------------------------:
-![](data/cat.jpg)  |  ![](data/out/mosaic-20-2320x3480.png)
+Original image (data/cat.jpg)             |  Mosaic output (data/out/mosaic-20-2320x3480)
+
+The quality of the ouput is heavily dependent on the size and variety of your dataset.
